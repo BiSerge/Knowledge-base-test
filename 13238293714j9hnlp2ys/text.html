@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">Изменения, влияющие на поведение системы</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Автоматическая установка новой версии с помощью программы запуска (1CEStart.exe) будет выполняться в следующих случаях: </p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">пользователь, выполняющий запуск, входит в группу локальных администраторов;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">пользователь, выполняющий запуск, не входит в группу локальных администраторов, но в групповых политиках для пользователя и компьютера разрешена установка программ (ключ реестра &quot;AlwaysInstallElevated&quot;).</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">Изменения, требующие изменений в конфигурациях или влияющие на поведение системы</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Исключена возможность административной установки, не устанавливается файл &quot;admupd.cfg&quot; в каталог установки платформы, не поддерживается ключ командной строки /AU.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Список баз хранится в файле ibases.v8i, который расположен в каталоге %APPDATA%\1C\1CEstart.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Конфигурационные файлы по умолчанию расположены в каталоге C:\Program Files\1Cv82\conf. Имя каталога, хранящего настройки кластера серверов изменено с &quot;server&quot; на &quot;srvinfo&quot;. Файлы с настройками кластера серверов (при установке сервера как службы) расположены в каталоге C:\Program Files\1Cv82\srvinfo.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Изменено местоположение каталога шаблонов. Реализована возможность указания нескольких каталогов шаблонов. Файл v8cscadr.lst более не используется.</p></body></html>
